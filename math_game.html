@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกมคณิตศาสตร์</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <h1>เกมคณิตศาสตร์</h1>
+    <div id="game-container">
+        <button id="start-button" onclick="startGame()">เริ่มเกม</button>
+        <div id="operator-buttons" style="display: none;">
+            <button onclick="setOperator('+')">+</button>
+            <button onclick="setOperator('-')">-</button>
+            <button onclick="setOperator('*')">*</button>
+            <button onclick="setOperator('/')">/</button>
+        </div>
+        <div id="question"></div>
+        <input type="number" id="answer" placeholder="ใส่คำตอบของคุณ">
+        <button id="check-button" onclick="checkAnswer()">ตอบ</button>
+        <div id="result"></div>
+        <div id="score"></div>
+        <button id="restart-button" style="display: none;" onclick="restartGame()">เริ่มเกมใหม่</button>
+    </div>
+</body>
+</html>
